@@ -15,6 +15,7 @@
 
 
 **安装**
+
 首先需要编译里面的cv_bridge，这就依赖于opencv3，[opencv3安装](https://blog.csdn.net/public669/article/details/99044895) 可以照着这个老哥的来。
 然后就要信息cv_bridge的编译工作了，这里注意，要使用python3来进行编译，所以要先配置catkin, 下面的命令要根据自己是python3.5还是3.几来进行更改。
  ```Shell
@@ -36,7 +37,7 @@ source install/setup.bash --extend
  ``` Shell
 python3 talker.py
  ``` 
-其中，为了防止图像失真，采用了打padding的方式，这里的四个数值分别对应上下左右，可以将长条形的图像padding为方的，检测效果好很多。
+其中，为了防止图像失真，在talker.py文件中，采用了打padding的方式，这里的四个数值分别对应上下左右，可以将长条形的图像padding为方的，检测效果好很多。
  ``` Shell
 im_padding = cv2.copyMakeBorder(cv_image,200,200,0,0,cv2.BORDER_CONSTANT,value=[0,0,0])
  ``` 
