@@ -1,0 +1,1 @@
+/home/autoware/catkin_ws/src/beginner_tutorials/cv_bridge/devel/.private/cv_bridge/share/cv_bridge/cmake/cv_bridgeConfig-version.cmake

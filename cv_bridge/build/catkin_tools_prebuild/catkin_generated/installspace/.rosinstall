@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/autoware/catkin_ws/src/beginner_tutorials/cv_bridge/install/setup.sh

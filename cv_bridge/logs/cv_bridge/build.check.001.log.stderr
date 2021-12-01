@@ -1,0 +1,8 @@
+[33m[1mCMake Warning[0m at /usr/share/cmake-3.10/Modules/FindBoost.cmake:1626 (message):
+  No header defined for python3; skipping header check
+[36mCall Stack (most recent call first):[0m
+  CMakeLists.txt:11 (find_package)
+
+
+/usr/local/lib/python3.6/dist-packages/setuptools/distutils_patch.py:26: UserWarning: Distutils was imported before Setuptools. This usage is discouraged and may exhibit undesirable behaviors or errors. Please use Setuptools' objects directly or at least import Setuptools first.
+  "Distutils was imported before Setuptools. This usage is discouraged "

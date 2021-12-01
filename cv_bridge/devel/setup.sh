@@ -1,0 +1,1 @@
+/home/autoware/catkin_ws/src/beginner_tutorials/cv_bridge/devel/.private/catkin_tools_prebuild/setup.sh

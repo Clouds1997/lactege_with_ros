@@ -1,0 +1,14 @@
+In file included from [01m[K/home/autoware/catkin_ws/src/beginner_tutorials/cv_bridge/src/vision_opencv/cv_bridge/src/rgb_colors.cpp:36:0[m[K:
+[01m[K/home/autoware/catkin_ws/src/beginner_tutorials/cv_bridge/src/vision_opencv/cv_bridge/include/cv_bridge/rgb_colors.h:39:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/opencv.hpp: No such file or directory
+ #include [01;31m[K<opencv2/opencv.hpp>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [src/CMakeFiles/cv_bridge.dir/rgb_colors.cpp.o] Error 1
+make[2]: *** Waiting for unfinished jobs....
+[01m[K/home/autoware/catkin_ws/src/beginner_tutorials/cv_bridge/src/vision_opencv/cv_bridge/src/cv_bridge.cpp:43:10:[m[K [01;31m[Kfatal error: [m[Kopencv2/imgcodecs.hpp: No such file or directory
+ #include [01;31m[K<opencv2/imgcodecs.hpp>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [src/CMakeFiles/cv_bridge.dir/cv_bridge.cpp.o] Error 1
+make[1]: *** [src/CMakeFiles/cv_bridge.dir/all] Error 2
+make: *** [all] Error 2
