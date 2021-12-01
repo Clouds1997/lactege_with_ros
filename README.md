@@ -1,13 +1,18 @@
 # 轻量级实例分割模型yolact于ros系统中的集成
 
 **YolactEdge**, 是一个实时的实例分割模型，可以达到 30.8 FPS on a Jetson AGX Xavier (and 172.7 FPS on an RTX 2080 Ti)with a ResNet-101 backbone on 550x550 resolution images. 
+
 论文地址 [paper](https://arxiv.org/abs/2012.12259).
-项目地址 [github](https://github.com/haotian-liu/yolact_edge)  这这个里面可以找到我们所需的模型
+项目地址 [github](https://github.com/haotian-liu/yolact_edge)  在这个里面可以找到我们所需的模型
+
 本项目只要做的工作就是，编写了一个ros节点，读取rosbag中的图像数据，并通过cv_bridge 转换后， 通过yolact模型进行实例分割，输出所需的锚框和mask信息。
 
 **效果**：
-[![example-gif-1](data/yolact_edge_example_1.gif)]
-[![example-gif-1](data/yolact_edge_example_2.gif)]
+
+![example-gif-1](data/yolact_edge_example_1.gif)
+
+![example-gif-1](data/yolact_edge_example_2.gif)
+
 
 **安装**
 首先需要编译里面的cv_bridge，这就依赖于opencv3，[opencv3安装](https://blog.csdn.net/public669/article/details/99044895) 可以照着这个老哥的来。
