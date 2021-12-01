@@ -1,4 +1,6 @@
 cv_bridge/build
 cv_bridge/devel
 cv_bridge/install
+cv_bridge/logs
+cv_bridge/.catkin_tools
 .vscode/
