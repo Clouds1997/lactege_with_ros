@@ -5,18 +5,18 @@
 论文地址 [paper](https://arxiv.org/abs/2012.12259).
 项目地址 [github](https://github.com/haotian-liu/yolact_edge)  在这个里面可以找到我们所需的模型
 
-**工作**
+**工作：**
 
 本项目是将YolactEdge集成于ros系统中，编写一个ros节点，读取rosbag中的图像数据，并通过cv_bridge转换后， 通过yolact模型进行实例分割，输出所需的锚框和mask信息，供后续的节点使用。
 
-**效果**：
+**效果：**
 
 ![example-gif-1](data/yolact_edge_example_1.gif)
 
 ![example-gif-1](data/yolact_edge_example_2.gif)
 
 
-**安装**
+**安装和使用：**
 
 首先需要编译里面的cv_bridge，这就依赖于opencv3，[opencv3安装](https://blog.csdn.net/public669/article/details/99044895) 可以照着这个老哥的来。
 然后就要信息cv_bridge的编译工作了，这里注意，要使用python3来进行编译，所以要先配置catkin, 下面的命令要根据自己是python3.5还是3.几来进行更改。
