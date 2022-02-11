@@ -5,7 +5,9 @@
 论文地址 [paper](https://arxiv.org/abs/2012.12259).
 项目地址 [github](https://github.com/haotian-liu/yolact_edge)  在这个里面可以找到我们所需的模型
 
-本项目只要做的工作就是，编写了一个ros节点，读取rosbag中的图像数据，并通过cv_bridge 转换后， 通过yolact模型进行实例分割，输出所需的锚框和mask信息。
+**工作**
+
+本项目是将YolactEdge集成于ros系统中，编写一个ros节点，读取rosbag中的图像数据，并通过cv_bridge转换后， 通过yolact模型进行实例分割，输出所需的锚框和mask信息，供后续的节点使用。
 
 **效果**：
 
@@ -22,6 +24,7 @@
 catkin config -DPYTHON_EXECUTABLE=/usr/bin/python3 -DPYTHON_INCLUDE_DIR=/usr/include/python3.5m -DPYTHON_LIBRARY=/usr/lib/x86_64-linux-gnu/libpython3.5m.so #寻找对应位置
 catkin config --install
    ```
+
 查看现有的安装于ros系统的cv_bridge版本
  ```Shell
 apt-cache show ros-melodic-cv-bridge | grep Version
@@ -37,7 +40,8 @@ source install/setup.bash --extend
  ``` Shell
 python3 talker.py
  ``` 
+
 其中，为了防止图像失真，在talker.py文件中，采用了打padding的方式，这里的四个数值分别对应上下左右，可以将长条形的图像padding为方的，检测效果好很多。
- ``` Shell
+ ``` Python
 im_padding = cv2.copyMakeBorder(cv_image,200,200,0,0,cv2.BORDER_CONSTANT,value=[0,0,0])
  ``` 
