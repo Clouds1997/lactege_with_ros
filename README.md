@@ -11,9 +11,9 @@
 
 **效果：**
 
-![example-gif-1](https://github.com/Clouds1997/lactege_with_ros/data/yolact_edge_example_1.gif)
+![example-gif-1](https://github.com/Clouds1997/lactege_with_ros/blob/main/data/yolact_edge_example_1.gif)
 
-![example-gif-1](https://github.com/Clouds1997/lactege_with_ros/data/yolact_edge_example_2.gif)
+![example-gif-1](https://github.com/Clouds1997/lactege_with_ros/blob/main/data/yolact_edge_example_2.gif)
 
 
 **安装和使用：**
